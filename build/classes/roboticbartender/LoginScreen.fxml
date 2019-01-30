@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" stylesheets="@Lime-Blue_Theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="roboticbartender.LoginScreenController">
+   <children>
+      <Label layoutX="265.0" layoutY="49.0" text="Are you a">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Button layoutX="95.0" layoutY="175.0" mnemonicParsing="false" onAction="#customerButtonWasPushed" prefHeight="164.0" prefWidth="252.0" text="Customer">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="435.0" layoutY="175.0" mnemonicParsing="false" onAction="#managerButtonWasPushed" prefHeight="164.0" prefWidth="252.0" text="Manager">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="650.0" layoutY="494.0" mnemonicParsing="false" onAction="#backButtonWasPushed" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutY="490.0" prefHeight="3.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>

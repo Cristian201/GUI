@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roboticbartender.TypeMenuController">
+    <stylesheets>
+        <URL value="@Lime-Blue_Theme.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="32.0" layoutY="25.0" text="What Type of Drink were you looking for?">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutY="490.0" prefHeight="3.0" prefWidth="800.0" />
+      <Button layoutX="90.0" layoutY="494.0" mnemonicParsing="false" prefWidth="100.0" text="View Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="540.0" layoutY="494.0" mnemonicParsing="false" onAction="#backButtonWasPushed" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="650.0" layoutY="494.0" mnemonicParsing="false" onAction="#logOutButtonWasPushed" prefWidth="100.0" text="Logout">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="96.0" prefHeight="394.0" prefWidth="252.0" spacing="193.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#cocktailButtonWasPushed" prefHeight="100.0" prefWidth="100.0" text="Cocktail">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onTheRocksButtonWasPushed" prefHeight="100.0" text="On The Rocks">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="266.0" layoutY="96.0" prefHeight="394.0" prefWidth="252.0" spacing="193.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#martiniButtonWasPushed" prefHeight="100.0" prefWidth="100.0" text="Martini">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#neatButtonWasPushed" prefHeight="100.0" prefWidth="100.0" text="Neat">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="518.0" layoutY="96.0" prefHeight="394.0" prefWidth="250.0" spacing="193.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#mixedDrinkButtonWasPushed" prefHeight="100.0" text="Mixed Drink">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#shotButtonWasPushed" prefHeight="100.0" prefWidth="100.0" text="Shot">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roboticbartender.SpiritSelectionController">
+    <stylesheets>
+        <URL value="@Lime-Blue_Theme.css" />
+    </stylesheets>
+   <children>
+      <Separator layoutY="490.0" prefHeight="3.0" prefWidth="800.0" />
+      <Button layoutX="90.0" layoutY="494.0" mnemonicParsing="false" prefWidth="100.0" text="View Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="650.0" layoutY="494.0" mnemonicParsing="false" onAction="#logOutButtonWasPushed" prefWidth="100.0" text="Logout">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="540.0" layoutY="494.0" mnemonicParsing="false" onAction="#backButtonWasPushed" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="127.0" layoutY="14.0" text="Select one of the following spirits to view">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="59.0" text="all the drinks that contain that spirit!">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="97.0" prefHeight="393.0" prefWidth="385.0" spacing="5.0">
+         <children>
+            <ImageView fx:id="vodka" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" onAction="#vodkaButtonWasPushed" prefWidth="100.0" text="Vodka">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="rum" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" onAction="#rumButtonWasPushed" prefWidth="100.0" text="Rum">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="399.0" layoutY="97.0" prefHeight="393.0" prefWidth="385.0" spacing="5.0">
+         <children>
+            <ImageView fx:id="gin" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" onAction="#ginButtonWasPushed" prefWidth="100.0" text="Gin">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="TripleSec" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" onAction="#tripleSecButtonWasPushed" prefWidth="100.0" text="Triple Sec">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

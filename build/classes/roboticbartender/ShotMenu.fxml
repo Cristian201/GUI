@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="roboticbartender.ShotMenuController">
+    <stylesheets>
+        <URL value="@Lime-Blue_Theme.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="shotTable" layoutX="11.0" layoutY="11.0" onMouseClicked="#userClickedOnList" prefHeight="470.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="252.0" text="Drink Name" />
+          <TableColumn fx:id="priceColumn" prefWidth="255.0" text="Drink Price" />
+        </columns>
+      </TableView>
+      <Separator layoutY="490.0" prefHeight="3.0" prefWidth="800.0" />
+      <Button layoutX="90.0" layoutY="494.0" mnemonicParsing="false" prefWidth="100.0" text="View Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="540.0" layoutY="494.0" mnemonicParsing="false" onAction="#backButtonWasPushed" prefWidth="100.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="650.0" layoutY="494.0" mnemonicParsing="false" onAction="#logOutButtonWasPushed" prefWidth="100.0" text="Logout">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutX="540.0" layoutY="11.0" prefHeight="470.0" prefWidth="250.0" spacing="20.0">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="images" fitHeight="284.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="selectedDrink">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="viewDrinkButton" mnemonicParsing="false" onAction="#viewDrinkButtonWasPushed" prefWidth="100.0" text="View Drink">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
