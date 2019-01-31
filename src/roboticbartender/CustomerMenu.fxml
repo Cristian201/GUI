@@ -31,7 +31,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <VBox alignment="CENTER" layoutX="14.0" layoutY="96.0" prefHeight="394.0" prefWidth="252.0" spacing="193.0">
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="96.0" prefHeight="394.0" prefWidth="386.0" spacing="193.0">
          <children>
             <Button mnemonicParsing="false" prefHeight="100.0" text="Create your own!">
                <font>
@@ -40,21 +40,12 @@
             </Button>
          </children>
       </VBox>
-      <VBox alignment="CENTER" layoutX="266.0" layoutY="96.0" prefHeight="394.0" prefWidth="252.0" spacing="193.0">
+      <VBox alignment="CENTER" layoutX="400.0" layoutY="96.0" prefHeight="394.0" prefWidth="386.0" spacing="193.0">
          <children>
             <Button mnemonicParsing="false" onAction="#goToMainDrinksMenuButtonWasPushed" prefHeight="100.0" text="Go to Main Drinks Menu">
                <font>
                   <Font size="18.0" />
                </font></Button>
-         </children>
-      </VBox>
-      <VBox alignment="CENTER" layoutX="518.0" layoutY="96.0" prefHeight="394.0" prefWidth="250.0" spacing="193.0">
-         <children>
-            <Button mnemonicParsing="false" onAction="#allDrinksButtonWasPushed" prefHeight="100.0" text="View all drinks!">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
          </children>
       </VBox>
    </children>

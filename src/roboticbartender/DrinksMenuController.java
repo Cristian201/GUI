@@ -39,7 +39,6 @@ public class DrinksMenuController implements Initializable {
     @FXML private ComboBox typeBox;
     
     @FXML private TableView<ViewDrink> everythingTable;
-    @FXML private Label selectedDrink;
     @FXML private Button viewDrinkButton;
     @FXML private ImageView images;
     @FXML private TableColumn<ViewDrink, String> nameColumn;
@@ -317,67 +316,180 @@ public class DrinksMenuController implements Initializable {
         return drinklist;
     }
     
+    public ObservableList<ViewDrink> getAllDrinks()
+    {
+        ObservableList<ViewDrink> drinklist = FXCollections.observableArrayList();
+        // Vodka
+        drinklist.add(new ViewDrink("Bloody Nightmare", "Highball", "Yes", "No", "No", "Weak", "Cocktail", 5.00, new Image("file:src/vodkaPictures/bloodynightmare.jpg")));
+        drinklist.add(new ViewDrink("Brass Monkey", "Highball", "Yes", "No", "No", "Weak", "Cocktail", 5.00, new Image("file:src/vodkaPictures/brassmonkey.png")));
+        drinklist.add(new ViewDrink("Cape Cod", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/vodkaPictures/capecod.jpg")));
+        drinklist.add(new ViewDrink("Cosmopolitan", "Martini", "No", "Yes", "No", "Medium", "Martini", 5.00, new Image("file:src/vodkaPictures/cosmopolitan.jpg")));
+        drinklist.add(new ViewDrink("Hawaiian Sunset", "Highball", "Yes", "Yes", "Yes", "Weak", "Cocktail", 5.00, new Image("file:src/vodkaPictures/hawaiiansunset.jpg")));
+        drinklist.add(new ViewDrink("Huntsman", "Martini", "No", "Yes", "No", "Strong", "Martini", 6.50, new Image("file:src/vodkaPictures/huntsman.jpg")));
+        drinklist.add(new ViewDrink("Kamikaze", "Shot", "No", "Yes", "No", "Strong", "Shot", 5.00, new Image("file:src/vodkaPictures/kamikaze.jpg")));
+        drinklist.add(new ViewDrink("Lemon Drop Martini", "Martini", "No", "Yes", "No", "Strong", "Martini", 8.00, new Image("file:src/vodkaPictures/lemondropmartini.jpg")));
+        drinklist.add(new ViewDrink("Lemon Drop Shot", "Shot", "No", "Yes", "No", "Strong", "Shot", 5.00, new Image("file:src/vodkaPictures/lemondropshot.jpg")));
+        drinklist.add(new ViewDrink("Madras", "Highball", "Yes", "No", "No", "Weak", "Mixed Drink", 5.00, new Image("file:src/vodkaPictures/madras.jpg")));
+        drinklist.add(new ViewDrink("Orange Crush", "Highball", "Yes", "No", "No", "Strong", "Mixed Drink", 6.50, new Image("file:src/vodkaPictures/orangecrush.jpg")));
+        drinklist.add(new ViewDrink("Screwdriver", "Highball", "Yes", "No", "No", "Medium", "Mixed Drink", 6.50, new Image("file:src/vodkaPictures/screwdriver.jpg")));
+        drinklist.add(new ViewDrink("Sparkling Vodka Cranberry", "Highball", "Yes", "No", "Yes", "Medium", "Mixed Drink", 6.50, new Image("file:src/vodkaPictures/sparklingvodkacranberry.jpg")));
+        drinklist.add(new ViewDrink("Vodka Collins", "Highball", "Yes", "Yes", "Yes", "Medium", "Cocktail", 6.50, new Image("file:src/vodkaPictures/vodkacollins.jpg")));
+        drinklist.add(new ViewDrink("Vodka Cranberry", "Highball", "Yes", "No", "No", "Medium", "Mixed Drink", 6.50, new Image("file:src/vodkaPictures/vodkacranberry.jpeg")));
+        drinklist.add(new ViewDrink("Vodka Neat", "Rock", "No", "No", "No", "Medium", "Neat", 6.50, new Image("file:src/vodkaPictures/vodkaneat.jpg")));
+        drinklist.add(new ViewDrink("Vodka On The Rocks", "Highball", "Yes", "No", "No", "Medium", "On The Rocks", 6.50, new Image("file:src/vodkaPictures/vodkaontherocks.jpg")));
+        drinklist.add(new ViewDrink("Vodka Shot", "Shot", "No", "Yes", "No", "Strong", "Shot", 5.00, new Image("file:src/vodkaPictures/vodkashot.jpg")));
+        // Rum
+        drinklist.add(new ViewDrink("Bermuda Triangle", "Highball", "Yes", "No", "No", "Medium", "Cocktail", 6.50, new Image("file:src/rumPictures/bermudatriangle.jpg")));
+        drinklist.add(new ViewDrink("Brass Monkey", "Highball", "Yes", "No", "No", "Weak", "Cocktail", 5.00, new Image("file:src/rumPictures/brassmonkey.jpg")));
+        drinklist.add(new ViewDrink("Daiquiri", "Martini", "No", "Yes", "No", "Medium", "Martini", 6.50, new Image("file:src/rumPictures/daiquiri.png")));
+        drinklist.add(new ViewDrink("Huntsman", "Martini", "No", "Yes", "No", "Strong", "Martini", 6.50, new Image("file:src/rumPictures/huntsman.jpg")));
+        drinklist.add(new ViewDrink("Little Devil", "Martini", "No", "Yes", "No", "Strong", "Martini", 6.50, new Image("file:src/rumPictures/littledevil.jpg")));
+        drinklist.add(new ViewDrink("Rum Neat", "Rock", "No", "No", "No", "Medium", "Neat", 6.50, new Image("file:src/rumPictures/rumneat.jpg")));
+        drinklist.add(new ViewDrink("Rum On The Rocks", "Rock", "Yes", "No", "No", "Medium", "On The Rocks", 6.50, new Image("file:src/rumPictures/rumontherocks.jpg")));
+        drinklist.add(new ViewDrink("Rum Shot", "Shot", "No", "Yes", "No", "Strong", "Shot", 5.00, new Image("file:src/rumPictures/rumshot.png")));
+        drinklist.add(new ViewDrink("Ti-Punch", "Rock", "Yes", "No", "No", "Medium", "Cocktail", 6.50, new Image("file:src/rumPictures/tipunch.png")));
+        // Gin
+        drinklist.add(new ViewDrink("Chelsea Sidecar", "Martini", "No", "Yes", "No", "Strong", "Martini", 6.50, new Image("file:src/ginPictures/chelseasidecar.jpg")));
+        drinklist.add(new ViewDrink("Flying Dutchman", "Rock", "Yes", "No", "No", "Strong", "Cocktail", 6.50, new Image("file:src/ginPictures/flyingdutchman.jpg")));
+        drinklist.add(new ViewDrink("Gimlet", "Martini", "No", "Yes", "No", "Medium", "Martini", 6.50, new Image("file:src/ginPictures/gimlet.jpg")));
+        drinklist.add(new ViewDrink("Gin and Cranberry", "Highball", "Yes", "No", "No", "Medium", "Mixed Drink", 6.50, new Image("file:src/ginPictures/ginandcranberry.jpeg")));
+        drinklist.add(new ViewDrink("Gin Neat", "Rock", "No", "No", "No", "Medium", "Neat", 6.50, new Image("file:src/ginPictures/ginneat.jpg")));
+        drinklist.add(new ViewDrink("Gin On The Rocks", "Rock", "Yes", "No", "No", "Medium", "On The Rocks", 6.50, new Image("file:src/ginPictures/ginontherocks.jpg")));
+        drinklist.add(new ViewDrink("Gin Shot", "Shot", "No", "Yes", "No", "Strong", "Shot", 5.00, new Image("file:src/ginPictures/ginshot.jpg")));
+        drinklist.add(new ViewDrink("Ginny Cosmo", "Martini", "No", "Yes", "No", "Medium", "Martini", 5.00, new Image("file:src/ginPictures/ginnycosmo.jpg")));
+        drinklist.add(new ViewDrink("Little Devil", "Martini", "No", "Yes", "No", "Strong", "Martini", 6.50, new Image("file:src/ginPictures/littledevil.jpg")));
+        drinklist.add(new ViewDrink("Singapore Sling", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/ginPictures/singaporesling.jpg")));
+        drinklist.add(new ViewDrink("Tom Collins", "Highball", "yes", "Yes", "Yes", "Medium", "Cocktail", 6.50, new Image("file:src/ginPictures/tomcollins.jpg")));
+        // Triple Sec
+        drinklist.add(new ViewDrink("Chelsea Sidecar", "Martini", "No", "Yes", "No", "Strong", "Martini", 6.50, new Image("file:src/tripleSecPictures/chelseasidecar.jpg")));
+        drinklist.add(new ViewDrink("Cosmopolitan", "Martini", "No", "Yes", "No", "Medium", "Martini", 5.00, new Image("file:src/tripleSecPictures/gimlet.jpg")));
+        drinklist.add(new ViewDrink("Flying Dutchman", "Rock", "Yes", "No", "No", "Strong", "Cocktail", 6.50, new Image("file:src/tripleSecPictures/flyingdutchman.jpg")));
+        drinklist.add(new ViewDrink("Ginny Cosmo", "Martini", "No", "Yes", "No", "Medium", "Martini", 5.00, new Image("file:src/tripleSecPictures/ginnycosmo.jpg")));
+        drinklist.add(new ViewDrink("Kamikaze", "Shot", "No", "Yes", "No", "Strong", "Shot", 5.00, new Image("file:src/tripleSecPictures/kamikaze.jpg")));
+        drinklist.add(new ViewDrink("Lemon Drop Martini", "Martini", "No", "Yes", "No", "Strong", "Martini", 8.00, new Image("file:src/tripleSecPictures/lemondropmartini.jpg")));
+        drinklist.add(new ViewDrink("Little Devil", "Martini", "No", "Yes", "No", "Strong", "Martini", 6.50, new Image("file:src/tripleSecPictures/littledevil.jpg")));
+        drinklist.add(new ViewDrink("Triple Sec Neat", "Rock", "No", "No", "No", "Medium", "Neat", 6.50, new Image("file:src/tripleSecPictures/triplesecneat.jpg")));
+        drinklist.add(new ViewDrink("Triple Sec On The Rocks", "Rock", "Yes", "No", "No", "Medium", "On The Rocks", 6.50, new Image("file:src/tripleSecPictures/triplesecontherocks.jpg")));
+        drinklist.add(new ViewDrink("Triple Sec Shot", "Shot", "No", "Yes", "No", "Strong", "Shot", 5.00, new Image("file:src/tripleSecPictures/triplesecshot.jpg")));
+        // Other
+        drinklist.add(new ViewDrink("Orange Cranberry", "Highball", "Yes", "No", "No", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/orangecranberry.jpg")));
+        drinklist.add(new ViewDrink("Orange Juice", "Highball", "Yes", "No", "No", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/orangejuice.jpg")));       
+        drinklist.add(new ViewDrink("Orange Soda", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/orangesoda.png")));
+        drinklist.add(new ViewDrink("Sunshine Fizz", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/sunshinefizz.jpg")));
+        drinklist.add(new ViewDrink("Cranberry Juice", "Highball", "Yes", "No", "No", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/cranberryjuice.jpg")));
+        drinklist.add(new ViewDrink("Cranberry Soda", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/cranberrysoda.png")));
+        drinklist.add(new ViewDrink("Soda Water", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/sodawater.jpg")));
+
+        return drinklist;
+    }
+    
+    public ObservableList<ViewDrink> getOtherDrinks()
+    {
+        ObservableList<ViewDrink> drinklist = FXCollections.observableArrayList();
+        
+        drinklist.add(new ViewDrink("Orange Cranberry", "Highball", "Yes", "No", "No", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/orangecranberry.jpg")));
+        drinklist.add(new ViewDrink("Orange Juice", "Highball", "Yes", "No", "No", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/orangejuice.jpg")));       
+        drinklist.add(new ViewDrink("Orange Soda", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/orangesoda.png")));
+        drinklist.add(new ViewDrink("Sunshine Fizz", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/sunshinefizz.jpg")));
+        drinklist.add(new ViewDrink("Cranberry Juice", "Highball", "Yes", "No", "No", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/cranberryjuice.jpg")));
+        drinklist.add(new ViewDrink("Cranberry Soda", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/cranberrysoda.png")));
+        drinklist.add(new ViewDrink("Soda Water", "Highball", "Yes", "No", "Yes", "Weak", "Mixed Drink", 5.00, new Image("file:src/weakPictures/sodawater.jpg")));
+
+        return drinklist;
+    }
+    
     public void ingredientBoxWasUpdated()
-    {               
-        if(ingredientBox.getValue().toString() == "Vodka")
-            everythingTable.setItems(getVodkaDrinks());
-        else if(ingredientBox.getValue().toString() == "Rum")
-            everythingTable.setItems(getRumDrinks());
-        else if(ingredientBox.getValue().toString() == "Gin")
-            everythingTable.setItems(getGinDrinks());
-        else if(ingredientBox.getValue().toString() == "Triple Sec")
-            everythingTable.setItems(getTripleSecDrinks());
+    {    
+        strengthBox.valueProperty().set(" ");
+        typeBox.valueProperty().set(" ");        
+        
+        if(null != ingredientBox.getValue().toString())
+            switch (ingredientBox.getValue().toString()) {
+            case "Vodka":
+                everythingTable.setItems(getVodkaDrinks());
+                break;
+            case "Rum":
+                everythingTable.setItems(getRumDrinks());
+                break;
+            case "Gin":
+                everythingTable.setItems(getGinDrinks());
+                break;
+            case "Triple Sec":
+                everythingTable.setItems(getTripleSecDrinks());
+                break;
+            case "Other":
+                everythingTable.setItems(getOtherDrinks());
+                break;
+            default:
+                break; 
+        }
     }
     
     public void ingredientBoxWasClicked()
     {
-        everythingTable.getItems().clear();
-        strengthBox.getSelectionModel().clearSelection();
-        typeBox.getSelectionModel().clearSelection();
         images.setImage(null);
         this.viewDrinkButton.setDisable(true); 
     }
     
     public void strengthBoxWasUpdated()
-    {        
-        if(strengthBox.getValue().toString() == "Weak")
-            everythingTable.setItems(getWeakDrinks());
-        else if(strengthBox.getValue().toString() == "Medium")
-            everythingTable.setItems(getMediumDrinks());
-        else if(strengthBox.getValue().toString() == "Strong")
-            everythingTable.setItems(getStrongDrinks());
+    {      
+        ingredientBox.valueProperty().set(" ");
+        typeBox.valueProperty().set(" ");        
+        
+        if(null != strengthBox.getValue().toString())
+            switch (strengthBox.getValue().toString()) {
+            case "Weak":
+                everythingTable.setItems(getWeakDrinks());
+                break;
+            case "Medium":
+                everythingTable.setItems(getMediumDrinks());
+                break;
+            case "Strong":
+                everythingTable.setItems(getStrongDrinks());
+                break;               
+            default:
+                break;
+            }
     }
     
     public void strengthBoxWasClicked()
     {
-        everythingTable.getItems().clear();
-        ingredientBox.getSelectionModel().clearSelection();
-        typeBox.getSelectionModel().clearSelection();
         images.setImage(null);
         this.viewDrinkButton.setDisable(true); 
     }
     
     public void typeBoxWasUpdated()
-    {        
-        if(typeBox.getValue().toString() == "Cocktail")
-            everythingTable.setItems(getCocktailDrinks());
-        else if(typeBox.getValue().toString() == "Martini")
-            everythingTable.setItems(getMartiniDrinks());
-        else if(typeBox.getValue().toString() == "Mixed Drinks")
-            everythingTable.setItems(getMixedDrinks());
-        else if(typeBox.getValue().toString() == "On The Rocks")
-            everythingTable.setItems(getOnTheRocksDrinks());
-        else if(typeBox.getValue().toString() == "Neat")
-            everythingTable.setItems(getNeatDrinks());
-        else if(typeBox.getValue().toString() == "Shot")
-            everythingTable.setItems(getShotDrinks());
+    {            
+        strengthBox.valueProperty().set(" ");
+        ingredientBox.valueProperty().set(" "); 
+        
+        if(null != typeBox.getValue().toString())
+            switch (typeBox.getValue().toString()) {
+            case "Cocktail":
+                everythingTable.setItems(getCocktailDrinks());
+                break;
+            case "Martini":
+                everythingTable.setItems(getMartiniDrinks());
+                break;
+            case "Mixed Drinks":
+                everythingTable.setItems(getMixedDrinks());
+                break;
+            case "On The Rocks":
+                everythingTable.setItems(getOnTheRocksDrinks());
+                break;
+            case "Neat":
+                everythingTable.setItems(getNeatDrinks());
+                break;
+            case "Shot":
+                everythingTable.setItems(getShotDrinks());
+                break;                
+            default:
+                break;
+        }
     }
     
-    public void typeBoxWasClicked()
+    public void typeBoxWasClicked() throws NullPointerException, RuntimeException
     {
-        everythingTable.getItems().clear();
-        strengthBox.getSelectionModel().clearSelection();
-        ingredientBox.getSelectionModel().clearSelection();
         images.setImage(null);
         this.viewDrinkButton.setDisable(true);
     }
@@ -394,9 +506,11 @@ public class DrinksMenuController implements Initializable {
         nameColumn.setCellValueFactory(new PropertyValueFactory<ViewDrink, String>("Name"));
         priceColumn.setCellValueFactory(new PropertyValueFactory<ViewDrink, String>("Price"));
         
-        this.viewDrinkButton.setDisable(true);  
+        this.viewDrinkButton.setDisable(true);
         
-        ingredientBox.getItems().addAll("Vodka","Rum","Gin", "Triple Sec");
+        everythingTable.setItems(getAllDrinks());
+        
+        ingredientBox.getItems().addAll("Vodka","Rum","Gin", "Triple Sec","Other");
         strengthBox.getItems().addAll("Weak","Medium","Strong");
         typeBox.getItems().addAll("Cocktail","Martini","Mixed Drinks", "On The Rocks", "Neat", "Shot");
     }    
