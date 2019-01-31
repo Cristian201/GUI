@@ -31,13 +31,8 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="96.0" prefHeight="394.0" prefWidth="252.0" spacing="193.0">
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="96.0" prefHeight="394.0" prefWidth="252.0" spacing="193.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#spiritButtonWasPushed" prefHeight="100.0" prefWidth="100.0" text="Spirit">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
             <Button mnemonicParsing="false" prefHeight="100.0" text="Create your own!">
                <font>
                   <Font size="18.0" />
@@ -47,20 +42,14 @@
       </VBox>
       <VBox alignment="CENTER" layoutX="266.0" layoutY="96.0" prefHeight="394.0" prefWidth="252.0" spacing="193.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#strengthButtonWasPushed" prefHeight="100.0" prefWidth="100.0" text="Strength">
+            <Button mnemonicParsing="false" onAction="#goToMainDrinksMenuButtonWasPushed" prefHeight="100.0" text="Go to Main Drinks Menu">
                <font>
                   <Font size="18.0" />
-               </font>
-            </Button>
+               </font></Button>
          </children>
       </VBox>
-      <VBox alignment="TOP_CENTER" layoutX="518.0" layoutY="96.0" prefHeight="394.0" prefWidth="250.0" spacing="193.0">
+      <VBox alignment="CENTER" layoutX="518.0" layoutY="96.0" prefHeight="394.0" prefWidth="250.0" spacing="193.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#typeButtonWasPushed" prefHeight="100.0" prefWidth="100.0" text="Type">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
             <Button mnemonicParsing="false" onAction="#allDrinksButtonWasPushed" prefHeight="100.0" text="View all drinks!">
                <font>
                   <Font size="18.0" />

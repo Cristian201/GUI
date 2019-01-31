@@ -66,7 +66,7 @@ public class ViewDrinkScreenController implements Initializable {
     
     public void backButtonWasPushed(ActionEvent event) throws IOException
     {
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("CustomerMenu.fxml"));
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("DrinksMenu.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
         
         //This line gets the Stage information
