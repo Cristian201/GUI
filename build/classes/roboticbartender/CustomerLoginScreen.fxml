@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" stylesheets="@Lime-Blue_Theme.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="roboticbartender.CustomerLoginScreenController">
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" stylesheets="@Lime-Blue_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roboticbartender.CustomerLoginScreenController">
    <children>
       <Label layoutX="13.0" layoutY="30.0" text="Please Scan your RFID Tag now on the reader below">
          <font>
@@ -25,7 +24,6 @@
             <Font size="34.0" />
          </font>
       </Label>
-      <PasswordField layoutX="308.0" layoutY="335.0" />
       <Button layoutX="333.0" layoutY="403.0" mnemonicParsing="false" onAction="#loginButtonWasPushed" prefWidth="100.0" text="Login">
          <font>
             <Font size="18.0" />
@@ -37,5 +35,6 @@
          </font>
       </Button>
       <Separator layoutY="490.0" prefHeight="3.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="490.0" />
+      <TextField layoutX="308.0" layoutY="335.0" promptText="Enter RFID Tag Here" />
    </children>
 </AnchorPane>

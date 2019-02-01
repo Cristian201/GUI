@@ -9,9 +9,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="800.0" stylesheets="@Lime-Blue_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roboticbartender.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="937.0" prefWidth="1500.0" stylesheets="@Lime-Blue_Theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roboticbartender.FXMLDocumentController">
    <children>
-      <ImageView fx:id="photo" fitHeight="539.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="photo" fitHeight="937.0" fitWidth="1552.0" layoutX="47.0" layoutY="-0.0" preserveRatio="true" scaleX="1.07">
          <image>
             <Image url="@../background%20idle%20and%20login.jpg" />
          </image>
@@ -19,14 +19,15 @@
             <Rectangle2D />
          </viewport>
       </ImageView>
-      <Label layoutX="267.0" layoutY="258.0" text="Welcome to the Robotic Bartender!" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="396.0" layoutY="369.0" prefHeight="937.0" prefWidth="1451.797607421875" text="Welcome to the Robotic Bartender! Tap Anywhere to Login" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <Button alignment="CENTER" layoutX="251.0" layoutY="291.0" mnemonicParsing="false" onAction="#loginButtonWasPushed" prefWidth="300.0" text="Tap here to login">
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#loginButtonWasPushed" opacity="0.0" prefHeight="937.0" prefWidth="1451.797607421875" text="Tap here to login" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
             <Font size="18.0" />
-         </font></Button>
+         </font>
+      </Button>
    </children>
 </AnchorPane>

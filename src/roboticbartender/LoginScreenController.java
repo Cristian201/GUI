@@ -31,6 +31,7 @@ public class LoginScreenController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(tableViewScene);
+        window.setMaximized(true);
         window.show();
     }
     
@@ -42,6 +43,7 @@ public class LoginScreenController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(tableViewScene);
+        window.setMaximized(true);
         window.show();
     }
     
@@ -53,6 +55,19 @@ public class LoginScreenController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(tableViewScene);
+        window.setMaximized(true);
+        window.show();
+    }
+    
+    public void signUpButtonWasPushed(ActionEvent event) throws IOException
+    {
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("SignUpPage.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+        
+        //This line gets the Stage information
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(tableViewScene);
+        window.setMaximized(true);
         window.show();
     }
     

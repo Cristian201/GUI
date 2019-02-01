@@ -25,7 +25,6 @@
             <Font size="34.0" />
          </font>
       </Label>
-      <PasswordField layoutX="318.0" layoutY="337.0" />
       <Button layoutX="345.0" layoutY="383.0" mnemonicParsing="false" onAction="#loginButtonWasPushed" prefWidth="100.0" text="Login">
          <font>
             <Font size="18.0" />
@@ -35,5 +34,6 @@
             <Font size="18.0" />
          </font></Button>
       <Separator layoutY="490.0" prefHeight="3.0" prefWidth="800.0" />
+      <TextField layoutX="318.0" layoutY="337.0" />
    </children>
 </AnchorPane>

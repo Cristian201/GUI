@@ -22,8 +22,6 @@ import javafx.stage.Stage;
  * @author crist
  */
 public class CustomerLoginScreenController implements Initializable {
-
-    boolean grantAccess = false;
     
     public void backButtonWasPushed(ActionEvent event) throws IOException
     {
@@ -33,6 +31,7 @@ public class CustomerLoginScreenController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(tableViewScene);
+        window.setMaximized(true);
         window.show();
     }
     
@@ -44,6 +43,7 @@ public class CustomerLoginScreenController implements Initializable {
         //This line gets the Stage information
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(tableViewScene);
+        window.setMaximized(true);
         window.show();
     }
     
