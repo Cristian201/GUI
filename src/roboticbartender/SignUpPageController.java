@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  */
 public class SignUpPageController implements Initializable {
 
-    public void signUpCustomerButtonWasPushed(ActionEvent event) throws IOException
+    public void signUpButtonWasPushed(ActionEvent event) throws IOException
     {
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("CustomerMenu.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
@@ -33,19 +33,7 @@ public class SignUpPageController implements Initializable {
         window.setScene(tableViewScene);
         window.setMaximized(true);
         window.show();
-    }
-    
-    public void signUpManagerButtonWasPushed(ActionEvent event) throws IOException
-    {
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("ManagerMenu.fxml"));
-        Scene tableViewScene = new Scene(tableViewParent);
-        
-        //This line gets the Stage information
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setScene(tableViewScene);
-        window.setMaximized(true);
-        window.show();
-    }    
+    }  
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

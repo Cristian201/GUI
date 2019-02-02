@@ -14,12 +14,12 @@
         <URL value="@Lime-Blue_Theme.css" />
     </stylesheets>
    <children>
-      <Label alignment="CENTER" layoutX="30.0" layoutY="20.0" prefHeight="93.0" prefWidth="1434.0" text="New User: Please Fill Out the Following Form">
+      <Label alignment="CENTER" layoutX="30.0" layoutY="20.0" prefHeight="93.0" prefWidth="1434.0" text="New Customer: Please Fill Out the Following Form">
          <font>
             <Font size="64.0" />
          </font>
       </Label>
-      <Separator layoutX="10.0" layoutY="870.0" prefHeight="3.0" prefWidth="1500.0" />
+      <Separator layoutY="870.0" prefHeight="3.0" prefWidth="1500.0" />
       <VBox alignment="TOP_CENTER" layoutX="505.0" layoutY="130.0" prefHeight="800.0" prefWidth="500.0" spacing="50.0">
          <children>
             <TextField promptText="Enter First Name Here">
@@ -43,7 +43,7 @@
                   <Font size="36.0" />
                </font>
             </TextField>
-            <Button mnemonicParsing="false" prefWidth="200.0" text="Sign Up">
+            <Button mnemonicParsing="false" onAction="#signUpButtonWasPushed" prefWidth="200.0" text="Sign Up">
                <font>
                   <Font size="36.0" />
                </font>
@@ -53,15 +53,5 @@
             <Insets top="10.0" />
          </padding>
       </VBox>
-      <Button layoutX="1116.0" layoutY="641.0" mnemonicParsing="false" onAction="#signUpManagerButtonWasPushed" text="Sign Up Manager">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Button>
-      <Button layoutX="106.0" layoutY="643.0" mnemonicParsing="false" onAction="#signUpCustomerButtonWasPushed" text="Sign Up Customer">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

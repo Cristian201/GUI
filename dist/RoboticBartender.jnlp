@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" java-vm-args="-Dcom.sun.javafx.isEmbedded=true -Dcom.sun.javafx.touch=true -Dcom.sun.javafx.virtualKeyboard=javafx "  href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="RoboticBartender.jar" size="6333394" download="eager" />
+    <jar href="RoboticBartender.jar" size="6333286" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="RoboticBartender" >
     <param name="requiredFXVersion" value="8.0+"/>
