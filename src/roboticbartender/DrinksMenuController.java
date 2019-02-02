@@ -92,6 +92,11 @@ public class DrinksMenuController implements Initializable {
         window.setScene(tableViewScene);
         window.show();
     }
+    
+    public void mostPopularButtonWasPushed(ActionEvent event) throws IOException
+    {
+
+    }
    
     public ObservableList<ViewDrink> getVodkaDrinks()
     {

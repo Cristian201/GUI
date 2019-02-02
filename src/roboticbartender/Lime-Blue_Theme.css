@@ -66,3 +66,7 @@
 .combo-box {
     -fx-font-size: 25pt "Arial";
 }
+
+.date-picker {
+    -fx-font-size: 20pt "Arial";
+}

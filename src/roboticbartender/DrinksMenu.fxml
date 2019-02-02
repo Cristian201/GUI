@@ -31,11 +31,16 @@
             <Font size="36.0" />
          </font>
       </Button>
-      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="65.0" prefHeight="60.0" prefWidth="1470.0" spacing="250.0">
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="65.0" prefHeight="60.0" prefWidth="1470.0" spacing="95.0">
          <children>
             <ComboBox fx:id="ingredientBox" onAction="#ingredientBoxWasUpdated" onMouseClicked="#ingredientBoxWasClicked" prefHeight="200.0" prefWidth="300.0" />
             <ComboBox fx:id="strengthBox" onAction="#strengthBoxWasUpdated" onMouseClicked="#strengthBoxWasClicked" prefHeight="200.0" prefWidth="300.0" />
             <ComboBox fx:id="typeBox" onAction="#typeBoxWasUpdated" onMouseClicked="#typeBoxWasClicked" prefHeight="200.0" prefWidth="300.0" />
+            <Button mnemonicParsing="false" onAction="#mostPopularButtonWasPushed" text="Most Popular">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
          </children>
       </HBox>
       <TableView fx:id="everythingTable" layoutX="11.0" layoutY="141.0" onMouseClicked="#userClickedOnTable" prefHeight="700.0" prefWidth="1000.0">
@@ -62,12 +67,12 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Label layoutX="650.0" layoutY="15.0" text="Strength">
+      <Label layoutX="495.0" layoutY="15.0" text="Strength">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Label layoutX="1220.0" layoutY="15.0" text="Type">
+      <Label layoutX="917.0" layoutY="15.0" text="Type">
          <font>
             <Font size="36.0" />
          </font>
